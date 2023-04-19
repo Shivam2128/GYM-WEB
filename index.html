@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivam Fitness</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<style>
+    /* CS reset */
+    body{
+        color: white;
+        margin: 0px;
+        background: url('img/anastase-maragos-7kEpUPB8vNk-unsplash.jpg')no-repeat center center/cover;
+        padding: 0px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Unbounded', cursive;
+        
+        
+    }
+   
+    .left{
+        /* border: 2px solid rgb(238, 243, 238) ; */
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 18px;
+    }
+    .left img{
+        width: 119px;
+        background-color: black;
+        box-shadow: 5px 5px 10px violet;
+       
+
+    }
+    .left div{
+        text-align: center;
+        font-size: 17px;
+         text-shadow: 3px 3px 10px violet;         
+         text-shadow: -3px -3px 10px violet;         
+         
+        }
+        .mid{
+            /* border: 2px solid rgb(243, 243, 237); */
+            display: block;
+            width: 38%;
+        margin: 18px auto;
+
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 17px;
+        cursor: pointer;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 23px 12px;
+        text-shadow: 3px 3px 10px violet;       
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: grey;
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 25px;
+        display: inline-block;
+          /* border: 2px solid  rgb(255, 255, 255); */
+          
+          
+         
+    }
+    .btn{
+        margin: 0px 9px;
+        color: white;
+        padding: 0px 14px;
+        border: 3px solid rgb(255, 255, 255);
+        border-radius: 10px;
+        font-size: 17px;
+        cursor: pointer;
+        box-shadow: 7px 7px 10px violet;
+
+    }
+    .btn:hover{
+        text-decoration: underline;
+        color: rgb(0, 0, 0);
+    }
+    .container{
+        /* border: 2px solid rgb(255, 255, 255); */
+        margin: 88px 395px;
+        padding: 75px 62px;
+        width: 37%;
+        border-radius: 13px;
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        padding: 6px;
+        margin: 4px auto;
+        width: 66%;
+        border: 2px solid black;
+        font-size: 16px;
+        border-radius: 21px;
+        font-family: 'Unbounded', cursive;
+        
+        
+    }
+    .zoro{
+        margin: 0px 9px;
+        color: rgb(255, 255, 255);
+        padding: 0px 14px;
+        border: 3px solid rgb(255, 255, 255);
+        border-radius: 10px;
+        font-size: 17px;
+        cursor: pointer;
+        background-color: black;
+       
+    }
+    .zoro:hover{
+        text-decoration: underline;
+        color: rgb(73, 78, 78);
+    }
+    .container h1{
+        text-align: center;
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+    }
+    .container button{
+        display: block;
+        width: 71%;
+        margin: auto;
+
+    }
+   
+</style>
+<body>
+    <header class="header">
+        <!-- left for logo -->
+        <div class="left">
+           <img src="img/logo.jp.png" alt="">
+           <div>
+            Shivam Fitness
+           </div>
+
+        </div>
+        <!-- mid for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+           
+
+        </div>
+        <!-- right for buttons -->
+        <div class="right">
+          <buttom class="btn">Call Us Now</buttom>
+          <buttom class="btn">Email Us </buttom>
+
+        </div>
+
+    </header>
+    <div class="container">
+      <h1>
+        JOIN THE BEST GYM IN KOLKATA NOW</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+               NAME: <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="luffy">
+                Gender:   Male <input type="radio" name="myGender">Female <input type="radio" name="myGender">
+                Others <input type="radio" name="myGender">
+            </div>
+            <div class="form-group">
+              AGE:  <input type="text" name="" placeholder="Age">
+            </div>
+            <div class="form-group">
+               LOCALITY: <input type="text" name="" placeholder="Locality">
+            </div>
+            <div class="form-group">
+              EMAIL:  <input type="email" name="" placeholder="Email">
+            </div>
+            <div class="form-group">
+              CONTACT NO.:  <input type="email" name="" placeholder="CONTACT NUMBER">
+            </div>
+            <button class="zoro">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
